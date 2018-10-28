@@ -77,6 +77,7 @@ public class MapTable {
         enemyCnt = mSelect.GetEnemyCount();                // 적군의 수 .... ①
 
         n1 = str.indexOf("position");
+        String debug = str.substring(n2, n1);
         mDelay = new DelayTime(str.substring(n2, n1));       // Delay
         attackTime = mDelay.GetDelay(0, 5);                     // 마지막 캐릭터  ... ②
 

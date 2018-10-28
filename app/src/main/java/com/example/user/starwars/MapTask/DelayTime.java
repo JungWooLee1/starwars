@@ -22,9 +22,12 @@ public class DelayTime {
         String s;
         int n;
 
+        int debug = tmp.length;
         for(int i =1; i < tmp.length; i++) {
             for(int j = 0; j < 8; j++) {
-                s = tmp[i].substring(j * 4, (j + 1) * 4).trim();
+
+                String tmp_ = tmp[i] + " ";
+                s = tmp_.substring(j * 4, (j + 1) * 4).trim();
                 if (s.equals("---"))
                     Delay[i - 1][j] = -1;
                 else
@@ -38,7 +41,6 @@ public class DelayTime {
         // -----------------------------
         // Get Delay
         // -----------------------------
-
 
     }
 
